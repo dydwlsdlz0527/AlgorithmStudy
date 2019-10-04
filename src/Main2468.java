@@ -63,13 +63,12 @@ public class Main2468 {
             chk = new boolean[N][N];
             int rain = 0;
             for (int i = 0; i < N; i++) {
-                stringTokenizer = new StringTokenizer(bufferedReader.readLine()," ");
+                stringTokenizer = new StringTokenizer(bufferedReader.readLine(), " ");
                 for (int j = 0; j < N; j++) {
                     arr[i][j] = Integer.parseInt(stringTokenizer.nextToken());
-                    rain = maxheight(rain,arr[i][j]);
+                    rain = maxheight(rain, arr[i][j]);
                 }
             }
-            //int[] safearr = new int[temp];
             int temp = 0;
             for (int i = rain-1; i >= 0; i--) {
                 for(boolean[] a:chk){
@@ -90,7 +89,6 @@ public class Main2468 {
         }
     }
 }
-
 class Point{
     int x;
     int y;
